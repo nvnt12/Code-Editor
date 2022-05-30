@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Editor</title>
 
+    <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+ 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +18,10 @@
             </div>
 
             <div class="navigation-section">
+                <button class="run-btn" onclick="run()">Run</button>
+
                 <button class="save-btn">Save</button>
+                
                 <ul class="nav-elements">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Change View</a></li>
@@ -32,13 +37,16 @@
 
     <div class="code-area">
         <div class="code-input">
-            <textarea name="html" id="html-code" cols="30" rows="10"></textarea>
-            <textarea name="css" id="css-code" cols="30" rows="10"></textarea>
-            <textarea name="js" id="js-code" cols="30" rows="10"></textarea>
+            <div class="html-label"><p>HTML</p></div>
+            <textarea name="html" id="htmlcode" oninput="showoutput()"></textarea>
+            <div class="css-label"><p>CSS</p></div>
+            <textarea name="css" id="csscode" oninput="showoutput()"></textarea>
+            <div class="js-label"><p>JS</p></div>
+            <textarea name="js" id="jscode" oninput="showoutput()"></textarea>
         </div>
 
         <div class="code-output">
-            <iframe src="" frameborder="0"></iframe>
+            <iframe id="output"></iframe>
         </div>
     </div>
 
@@ -46,5 +54,10 @@
         <button class="console-btn">Console</button>
         <button class="open-in-new-window">Open output in new window</button>
     </div>
+
+    <script type="text/Javascript"src="/code.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
