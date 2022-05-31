@@ -16,15 +16,45 @@ j.setTheme("ace/theme/xcode");
 /*j.setTheme("ace/theme/terminal");*/
 j.getSession().setTabSize(4);
 
-const r = document.querySelector(".run-btn");
+const run = document.querySelector(".run-btn");
 
- function run(){
-    r.onfullscreenchange;
+function runOutput(){
+    run.onfullscreenchange;
     let htmlCode = h.getValue();
     let cssCode = "<style>" + c.getValue() + "</style>";
     let jsCode = "<scri" + "pt>" + j.getValue() + "</scri" + "pt>";
     let previewWindow = document.querySelector("#output").contentWindow.document;
     previewWindow.open();
     previewWindow.write(htmlCode+cssCode+jsCode);
-    previewWindow.close();
+    previewWindow.close();  
+};
+
+function consoleOpen() {
+    const c = document.querySelector(".console-div");
+    const o = document.getElementById("output");
+    if(c.style.display == "none"){
+        c.style.display = "flex";
+        o.style.height = "80%";
+    } else {
+        c.style.display = "none";
+        o.style.height = "100%";
+    }
+};
+
+function consoleClose() {
+    const c = document.querySelector(".console-div");
+    const o = document.getElementById("output");
+    if(c.style.display == "flex"){
+        c.style.display = "none";
+        o.style.height = "100%";
+    }
+};
+
+function newOutputWindow(){
+    nw = window.open();
+    let htmlCode = h.getValue();
+    let cssCode = "<style>" + c.getValue() + "</style>";
+    let jsCode = "<scri" + "pt>" + j.getValue() + "</scri" + "pt>";
+    nw.document.write(htmlCode + cssCode + jsCode);
+
 };

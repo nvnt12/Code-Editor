@@ -18,12 +18,12 @@
             </div>
 
             <div class="navigation-section">
-                <button class="run-btn" onclick="run()">Run</button>
+                <button class="run-btn" onclick="runOutput()">Run</button>
 
                 <button class="save-btn">Save</button>
                 
                 <ul class="nav-elements">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html" target="_self">Home</a></li>
                     <li><a href="#">Change View</a></li>
                     <li><a href="#">Tutorials</a></li>
                 </ul>
@@ -38,24 +38,33 @@
     <div class="code-area">
         <div class="code-input">
             <div class="html-label"><p>HTML</p></div>
-            <textarea name="html" id="htmlcode" oninput="showoutput()"></textarea>
+            <textarea name="html" id="htmlcode"></textarea>
             <div class="css-label"><p>CSS</p></div>
-            <textarea name="css" id="csscode" oninput="showoutput()"></textarea>
+            <textarea name="css" id="csscode"></textarea>
             <div class="js-label"><p>JS</p></div>
-            <textarea name="js" id="jscode" oninput="showoutput()"></textarea>
+            <textarea name="js" id="jscode"></textarea>
         </div>
 
         <div class="code-output">
             <iframe id="output"></iframe>
+
+            <div class="console-div">
+                <div class="console-nav">
+                    <p>Console</p>
+                    <img src="images/cross.svg" class="console-close-btn" onclick="consoleClose()">
+                </div>
+
+                <iframe id="console"></iframe>
+            </div>
         </div>
     </div>
 
     <div class="lower-nav">
-        <button class="console-btn">Console</button>
-        <button class="open-in-new-window">Open output in new window</button>
+        <button class="console-btn" onclick="consoleOpen()">Console</button>
+        <button class="open-in-new-window" onclick="newOutputWindow()">Open output in new window</button>
     </div>
 
-    <script type="text/Javascript"src="/code.js"></script>
+    <script type="text/Javascript"src="script.js"></script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>

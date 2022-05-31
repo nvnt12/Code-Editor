@@ -104,9 +104,12 @@ body {
     width: calc(100% - 500px);
     height: calc(100% - 20px);
     border: 10px solid rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    justify-items: normal;
 }
 
-.code-area .code-output iframe{
+.code-area .code-output #output{
     width: 100%;
     height: 100%;
     border: 1px solid #888;
@@ -191,4 +194,47 @@ body {
     color: yellow;
     margin-top: 6px;
     margin-left: 10px;
+}
+
+.console-div {
+    width: 100%;
+    height: 20%;
+    display: none;
+    flex-direction: column;
+    margin-bottom: 0%;
+    border: 1px solid #888;
+    border-top: none;
+}
+
+.console-div .console-nav {
+    display: flex;
+    height: 20px;
+    background-color: #888;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.console-div .console-nav > p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2.5px;
+    margin-left: 10px;
+    color: #111;
+}
+
+.console-div .console-nav .console-close-btn {
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.console-div #console {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-bottom: 0px;
+    background-color: #111;
+    color: white;
 }
