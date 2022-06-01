@@ -17,7 +17,6 @@ j.setTheme("ace/theme/xcode");
 j.getSession().setTabSize(4);
 
 const run = document.querySelector(".run-btn");
-
 function runOutput(){
     run.onfullscreenchange;
     let htmlCode = h.getValue();
@@ -26,7 +25,7 @@ function runOutput(){
     let previewWindow = document.querySelector("#output").contentWindow.document;
     previewWindow.open();
     previewWindow.write(htmlCode+cssCode+jsCode);
-    previewWindow.close();  
+    previewWindow.close(); 
 };
 
 function consoleOpen() {
@@ -55,6 +54,7 @@ function newOutputWindow(){
     let htmlCode = h.getValue();
     let cssCode = "<style>" + c.getValue() + "</style>";
     let jsCode = "<scri" + "pt>" + j.getValue() + "</scri" + "pt>";
+    nw.open();
     nw.document.write(htmlCode + cssCode + jsCode);
-
+    nw.close;
 };

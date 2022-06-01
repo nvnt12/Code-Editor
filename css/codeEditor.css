@@ -1,10 +1,20 @@
+:root {
+    --black-currant: #0A0D25;
+    --coral: #ff844b;
+    --oyster-bay: #e3edf2;
+    --french-pass: #9fc9dd;
+    --hippie-blue: #4e7d96;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
 
 .upper-nav {
-    background: #111;
+    background: var(--black-currant);
     width: 100%;
     height: 50pxpx;
 }
@@ -33,10 +43,10 @@ body {
 
 .nav-elements li > a {
     text-decoration: none;
-    color: white;
+    color: var(--oyster-bay);
     padding: 20px;
     justify-items: end;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .logo {
@@ -47,8 +57,8 @@ body {
 }
 
 .user-icon {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin-right: 80px;
     margin-top: 6px;
 }
@@ -56,10 +66,10 @@ body {
 .run-btn {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #111;
+    color: var(--black-currant);
     padding: 5px 25px;
     font-weight: bold;
-    background-color: green;
+    background-color: var(--coral);
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -69,10 +79,10 @@ body {
 .save-btn {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #111;
+    color: var(--black-currant);
     padding: 5px 20px;
     font-weight: bold;
-    background-color: burlywood;
+    background-color: var(--french-pass);
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -90,7 +100,7 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     width: 500px;
-    background-color: rgb(207, 207, 207);
+    background-color: var(--oyster-bay);
 }
 
 .code-input > textarea {
@@ -102,8 +112,11 @@ body {
 
 .code-output {
     width: calc(100% - 500px);
-    height: calc(100% - 20px);
-    border: 10px solid rgb(207, 207, 207);
+    height: calc(100% -20px);
+    border-left: 15px solid var(--oyster-bay);
+    border-right: 10px solid var(--oyster-bay);
+    border-top: 5px solid var(--oyster-bay);
+    border-bottom: 5px solid var(--oyster-bay);
     display: flex;
     flex-direction: column;
     justify-items: normal;
@@ -112,20 +125,21 @@ body {
 .code-area .code-output #output{
     width: 100%;
     height: 100%;
-    border: 1px solid #888;
+    border: 1px solid var(--black-currant);
+    border-radius: 5px;
 }
 
 .lower-nav {
     width: 100%;
     height: 51px;
-    background: #111;
+    background: var(--black-currant);
 }
 
 .lower-nav > button {
-    color: #111;
+    color: var(--black-currant);
     padding: 5px 20px;
     font-weight: bold;
-    background-color: burlywood;
+    background-color: var(--french-pass);
     font-size: 14px;
     margin: 12px 10px 10px 20px;
     border-radius: 5px;
@@ -137,15 +151,17 @@ body {
     height: 33.33%;
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid #888;
-    margin-bottom: 0px;
-    margin-top: 0px
+    border: 1px solid var(--black-currant);
+    margin-bottom: 5px;
+    margin-top: 0px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .html-label {
     height: 30px;
     margin: 0%;
-    background-color: #111;
+    background-color: var(--black-currant);
     width: max-content;
     padding-right: 15px;
     border-top-right-radius: 5px;
@@ -163,7 +179,7 @@ body {
 .css-label {
     height: 30px;
     margin: 0%;
-    background-color: #111;
+    background-color: var(--black-currant);
     width: max-content;
     padding-right: 15px;
     border-top-right-radius: 5px;
@@ -181,7 +197,7 @@ body {
 .js-label {
     height: 30px;
     margin: 0%;
-    background-color: #111;
+    background-color: var(--black-currant);
     width: max-content;
     padding-right: 15px;
     border-top-right-radius: 5px;
@@ -202,14 +218,14 @@ body {
     display: none;
     flex-direction: column;
     margin-bottom: 0%;
-    border: 1px solid #888;
+    border:1px solid var(--black-currant);
     border-top: none;
 }
 
 .console-div .console-nav {
     display: flex;
     height: 20px;
-    background-color: #888;
+    background-color: var(--french-pass);
     display: flex;
     justify-content: space-between;
 
@@ -220,7 +236,7 @@ body {
     font-weight: bold;
     margin-top: 2.5px;
     margin-left: 10px;
-    color: #111;
+    color: var(--black-currant);
 }
 
 .console-div .console-nav .console-close-btn {
@@ -235,6 +251,12 @@ body {
     height: 100%;
     border: none;
     margin-bottom: 0px;
-    background-color: #111;
-    color: white;
+    background-color: #222;
+    color: var(--oyster-bay);
+}
+
+.console-div #console .console-message {
+    margin: 5px 10px;
+    font-size: 14px;
+    font-weight: lighter;
 }
