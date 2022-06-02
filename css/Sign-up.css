@@ -16,7 +16,7 @@ html {
 body {
     margin: 0%;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--oyster-bay);
+    background-color: whitesmoke;
     height: 100%;
     width: 100%;
 }
@@ -74,15 +74,38 @@ body {
     margin-top: 25px;
 }
 
-.form input {
+.input-control {
+    margin-bottom: 20px;
+}
+
+.input-control input {
     width: 498px;
     height: 45px;
     margin-top: 20px;
-    margin-bottom: 30px;
     border-radius: 5px;
     border: 1px solid var(--black-currant);
     font-size: 16px;
     padding-left: 10px;
+}
+
+.input-control input:focus {
+    outline: 0;
+    border-color: #ff844b;
+}
+
+.input-control.success input {
+    border-color: green;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+
+.input-control .error {
+    color: red;
+    font-size: 14px;
+    height: 15px;
+    margin: 5px;
 }
 
 .form .sign-up-btn {

@@ -18,12 +18,21 @@
         <div class="login">
             <form action="" class="form">
                 <h1 class="heading">Log in</h1><br>
-                <label for="email-input">Email</label><br>
-                <input type="email" name="email" id="email-input" placeholder="Enter email address"><br>
-                <label for="password-input">Password</label><br>
-                <input type="password" id="password-input" placeholder="Enter password"><br>
-                <button class="log-in-btn">Log in</button>
+                
+                <div class="input-control">
+                    <label for="email-input">Email</label><br>
+                    <input type="text" name="email" id="email-input" placeholder="Enter email address"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password-input">Password</label><br>
+                    <input type="password" id="password-input" placeholder="Enter password"><br>
+                    <div class="error"></div>
+                </div>
+                <button class="log-in-btn" type="submit" onclick="validateInputs()">Log in</button>
                 <p>Don't have an account? <a href="Sign-up.html" class="signup-link">Sign up</a></p>
+
+                <script src="Login.js"></script>
             </form>
         </div>
     </div>

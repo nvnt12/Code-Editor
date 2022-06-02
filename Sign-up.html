@@ -18,10 +18,16 @@
         <div class="sign-up">
             <form action="" class="form">
                 <h1 class="heading">Sign up</h1><br>
-                <label for="email-input">Email</label><br>
-                <input type="email" name="email" id="email-input" placeholder="Enter email address"><br>
-                <label for="password-input">Password</label><br>
-                <input type="password" id="password-input" placeholder="Enter password"><br>
+                <div class="input-control">
+                    <label for="email-input">Email</label><br>
+                    <input type="text" name="text" id="email-input" placeholder="Enter email address"><br>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password-input">Password</label><br>
+                    <input type="password" name="password" id="password-input" placeholder="Enter password"><br>
+                    <div class="error"></div>
+                </div>
                 <div class="pwd-rules">
                     <ul class="left">
                         <li>One uppercase character</li>
@@ -33,10 +39,12 @@
                         <li>8 character minimum</li>
                     </ul>
                 </div>
-                <button class="sign-up-btn">Sign up for free</button>
+                <button class="sign-up-btn" type="submit" onclick="validateInputs()">Sign up for free</button>
                 <p>Already have an account? <a href="Login.html" class="login-link">Log in</a></p>
             </form>
         </div>
     </div>
+
+    <script src="Sign-up.js"></script>
 </body>
 </html>
