@@ -33,7 +33,7 @@ const isValidEmail = email => {
 
 const isValidPassword = password => {
     const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    return re.test(String(password));
+    return re.test(password);
 };
 
 const validateInputs = () => {
@@ -50,7 +50,7 @@ const validateInputs = () => {
 
     if(passwordValue === "") {
         setError(password, 'Password is required');
-    } else if(!isValidPassword(password)) {
+    } else if(!isValidPassword(passwordValue)) {
         setError(password, 'Invalid password');
     } else {
         setSuccess(password);
