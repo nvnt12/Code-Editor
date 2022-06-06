@@ -1,0 +1,364 @@
+:root {
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.nav .navigation {
+    width: 100%;
+    height: 80%;
+    background-color: #1B262C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.nav .navigation .logo {
+    height: 60px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.nav .navigation .nav-elements{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.nav-elements li > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    justify-items: end;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.hero-section {
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 770px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-section .hero-img {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-section .title {
+    color: white;
+    font-size: 52px;
+    width: 800px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.hero-section .subtitle {
+    color: white;
+    font-size: 24px;
+    width: 800px;
+    text-align: center;
+    margin-top: -20px;
+    font-weight: lighter;
+}
+
+.hero-section .cta-btn {
+    width: 400px;
+    height: 80px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 20px;
+    background-color: #AB99FF;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.learning-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.learning-section > h2 {
+    font-size: 48px;
+    margin-top: 60px;
+}
+
+.learning-section .cards-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    margin: 50px;
+}
+
+.learning-section .cards-section .html-card {
+    border: none;
+    border-radius: 25px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFE3A9;
+}
+
+.html-card > h3 {
+    font-size: 48px;
+}
+
+.html-card > p {
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.html-card .learn-html-btn {
+    height: 65px;
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 30px;
+    background-color: #FF5D5D;
+}
+
+.html-card .html-ref-btn {
+    height: 65px;
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #FF8C8C;
+}
+
+.learning-section .cards-section .css-card {
+    border: none;
+    border-radius: 25px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #BBE1FA;
+}
+
+.css-card > h3 {
+    font-size: 48px;
+}
+
+.css-card > p {
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.css-card .learn-css-btn {
+    height: 65px;
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 30px;
+    background-color: #1B1C2C;
+}
+
+.css-card .css-ref-btn {
+    height: 65px;
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #3282B8;
+}
+
+.learning-section .cards-section .js-card {
+    border: none;
+    border-radius: 25px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFC3C3;
+}
+
+.js-card > h3 {
+    font-size: 48px;
+}
+
+.js-card > p {
+    font-size: 20px;
+    margin-top: -30px;
+    width: 300px;
+    text-align: center;
+}
+
+.js-card .learn-js-btn {
+    height: 65px;
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #9EA9F0;
+}
+
+.js-card .js-ref-btn {
+    height: 65px;
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #CCC1FF;
+}
+
+.display-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #9EA9F0;
+}
+
+.display-section > h2 {
+    font-size: 48px;
+    margin-top: 80px;
+}
+
+.display-section .cd-display {
+    height: 620px;
+    width: 1020px;
+    background-color: #030303;
+    border: #1B1C2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.display-section .cd-display .iframe{
+    height: 600px;
+    width: 1000px;
+    background-color: #FFFFFF;
+    border: #1B1C2c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-section .open-cd-btn {
+    height: 60px;
+    width: 600px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: #553C8B;
+}
+
+.features-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.features-section > h2 {
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.features-section .features {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #FFECC5;
+    border: none;
+    border-radius: 25px;
+    width: 1200px;
+    height: 430px;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.features .left-features-list {
+    margin-top: 0px;
+}
+
+.features .right-features-list {
+    margin-top: 0px;
+    margin-left: -50px;
+}
+
+
+.features .outer-ul > li{
+    font-size: 24px;
+    width: 380px;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.features .inner-ul >li{
+    list-style: none;
+    font-size: 20px;
+    width: 380px;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+.footer-section {
+    background-color: #1B262C;
+    height: 80px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

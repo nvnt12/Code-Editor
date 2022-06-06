@@ -1,18 +1,18 @@
 var h = ace.edit("htmlcode");
 h.getSession().setMode("ace/mode/html");
-h.setTheme("ace/theme/xcode");
+h.setTheme("ace/theme/clouds");
 /*h.setTheme("ace/theme/terminal");*/
 h.getSession().setTabSize(4);
 
 var c = ace.edit("csscode");
 c.getSession().setMode("ace/mode/css");
-c.setTheme("ace/theme/xcode");
+c.setTheme("ace/theme/clouds");
 /*c.setTheme("ace/theme/terminal");*/
 c.getSession().setTabSize(4);
 
 var j = ace.edit("jscode");
 j.getSession().setMode("ace/mode/javascript");
-j.setTheme("ace/theme/xcode");
+j.setTheme("ace/theme/clouds");
 /*j.setTheme("ace/theme/terminal");*/
 j.getSession().setTabSize(4);
 

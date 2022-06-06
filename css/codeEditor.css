@@ -16,7 +16,7 @@ body {
 .upper-nav {
     background: var(--black-currant);
     width: 100%;
-    height: 50pxpx;
+    height: 54px;
 }
 
 .navigation {
@@ -50,7 +50,7 @@ body {
 }
 
 .logo {
-    width: 50px;
+    width: 110px;
     height: 50px;
     margin-left: 40px;
     justify-items: flex-start;
