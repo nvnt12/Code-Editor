@@ -20,14 +20,14 @@ body {
 }
 
 .header .logo {
-    height: 70px;
-    width: 100px;
+    height: 60px;
+    width: 80px;
     margin: 10px 40px;
 }
 
 .header .cancel {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     margin: 30px 30px;
 }
 
@@ -43,39 +43,40 @@ body {
     border: 1px solid black;
     border-radius: 15px;
     width: fit-content;
-    width: 600px;
-    height: 650px;
+    width: 500px;
+    height: 550px;
     background-color:white;
 }
 
 .sign-up-form .sign-up .form {
-    padding: 45px;
-    height: 650px;
+    padding: 30px;
+    height: 550px;
 }
 
 .form .heading {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: normal;
     color: black;
-    margin-top: 0;
     margin-bottom: 0px;
-}
-
-.form label {
-    font-size: 20px;
-    color: black;
-    margin-bottom: 20px;
     margin-top: 15px;
 }
 
+.form label {
+    font-size: 16px;
+    color: black;
+    margin-bottom:0px;
+    margin-top: 0px;
+}
+
 .input-control {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .input-control input {
-    width: 498px;
-    height: 45px;
-    margin-top: 20px;
+    width: 420px;
+    height: 40px;
+    margin-top: 10px;
     border-radius: 5px;
     border: 1px solid black;
     font-size: 16px;
@@ -97,28 +98,28 @@ body {
 
 .input-control .error {
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     height: 15px;
     margin: 5px;
 }
 
 .form .sign-up-btn {
-    width: 510px;
+    width: 440px;
     height: 60px;
-    background-color: #AB99FF;
+    background-color:#AB99FF;
     border: 1px solid #AB99FF;
     border-radius: 50px;
     color: black;
     font-size: 20px;
     font-weight:600;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     align-items: center;
 }
 
 .form > p{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 16px;
 }
 
@@ -126,13 +127,13 @@ body {
     display: flex;
     margin-top: -15px;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 12px;
     list-style: circle;
 }
 
 .form .left {
     list-style: none;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .form .left li::before {
@@ -146,7 +147,7 @@ body {
 
 .form .right {
     list-style: none;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .form .right li::before {
