@@ -38,6 +38,8 @@ body {
     list-style: none;
     margin-right: 50px;
     align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .nav-elements li > a {
@@ -47,6 +49,7 @@ body {
     justify-items: end;
     font-size: 20px;
     font-weight: 550;
+    width: 160px;
 }
 
 .hero-section {
@@ -128,6 +131,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #FFE3A9;
+    box-shadow: -6px 6px 10px lightgrey;
 }
 
 .html-card > h3 {
@@ -172,6 +176,8 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #BBE1FA;
+    box-shadow: -6px 6px 10px lightgrey;
+    
 }
 
 .css-card > h3 {
@@ -216,6 +222,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #FFC3C3;
+    box-shadow: -6px 6px 10px lightgrey;
 }
 
 .js-card > h3 {
@@ -238,7 +245,7 @@ body {
     color: white;
     font-weight: 600;
     margin-top: 10px;
-    background-color: #9EA9F0;
+    background-color: #553C8B;
 }
 
 .js-card .js-ref-btn {
@@ -250,7 +257,7 @@ body {
     color: white;
     font-weight: 600;
     margin-top: 10px;
-    background-color: #CCC1FF;
+    background-color: #9EA9F0;
 }
 
 .display-section {
@@ -290,7 +297,7 @@ body {
 
 .display-section .open-cd-btn {
     height: 60px;
-    width: 600px;
+    width: 500px;
     border: none;
     border-radius: 40px;
     font-size: 24px;
@@ -321,7 +328,7 @@ body {
     background-color: #FFECC5;
     border: none;
     border-radius: 25px;
-    width: 1200px;
+    width: 1100px;
     height: 430px;
     align-items: flex-start;
     margin: 20px;
@@ -333,7 +340,6 @@ body {
 
 .features .right-features-list {
     margin-top: 0px;
-    margin-left: -50px;
 }
 
 
@@ -361,4 +367,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ddlbtn {
+    color: white;    
+    padding: 20px 20px;
+    justify-items: end;
+    font-size: 20px;
+    font-weight: 550;
+    background: none;
+    border: none;
+    cursor: pointer; 
+    width: 160px;
+}
+
+.ddl-list {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.ddl-list > a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.ddl-list a:hover {
+    background-color: #3282B8;
+    color: white;
+}
+
+.ddl:hover .ddl-list {
+  display: block;
+}
+
+.ddl-arrow {
+    margin-left: 10px;
+    width: 20px;
+    height: 10px;
+    margin-bottom: 2px;
 }
