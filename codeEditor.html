@@ -18,19 +18,18 @@
             </div>
 
             <div class="navigation-section">
-                <button class="run-btn" onclick="runOutput()">Run</button>
-
-                <button class="save-btn">Save</button>
-                
                 <ul class="nav-elements">
+                    <li class="layout">
+                        <button class="layout-btn">Layout<img class="layout-arrow" src="images/down-arrow.svg"></button>
+                        <div class="layout-list">
+                            <a><img src="images/right-output.svg" class="r-output"></a>
+                            <a><img src="images/left-output.svg" class="l-output"></a>
+                        </div>
+                    </li>
                     <li><a href="index.html" target="_self">Home</a></li>
-                    <li><a href="#">Change View</a></li>
                     <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Log in</a></li>
                 </ul>
-            </div>
-
-            <div class="user-id">
-                <a href="Login.html"><img class="user-icon" src="images/user.png" alt="User icon"></a>
             </div>
         </nav>
     </div>
@@ -46,6 +45,7 @@
         </div>
 
         <div class="code-output">
+
             <iframe id="output"></iframe>
 
             <div class="console-div">
@@ -64,6 +64,8 @@
     <div class="lower-nav">
         <button class="console-btn" onclick="consoleOpen()">Console</button>
         <button class="open-in-new-window" onclick="newOutputWindow()">Open output in new window</button>
+        <button class="run-btn" onclick="runOutput()">Run</button>
+        <button class="save-btn">Save</button>
     </div>
 
     <script type="text/Javascript"src="codeEditor.js"></script>

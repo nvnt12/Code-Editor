@@ -152,7 +152,7 @@ body {
     font-size: 20px;
     color: white;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: #FF5D5D;
     cursor: pointer;
 }
@@ -200,7 +200,7 @@ body {
     font-size: 20px;
     color: white;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: #1B1C2C;
     cursor: pointer;
 }
@@ -249,7 +249,7 @@ body {
     font-size: 20px;
     color: white;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #553C8B;
     cursor: pointer;
 }
@@ -387,7 +387,6 @@ body {
     border: none;
     cursor: pointer; 
     width: 160px;
-    cursor: pointer;
 }
 
 .ddl-list {
