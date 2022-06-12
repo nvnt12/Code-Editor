@@ -18,7 +18,7 @@ body {
 
 .nav .navigation {
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: #1B262C;
     display: flex;
     justify-content: space-between;
@@ -47,8 +47,7 @@ body {
     color: white;
     padding: 20px 20px;
     justify-items: end;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
     width: 160px;
 }
 
@@ -382,11 +381,12 @@ body {
     padding: 20px 20px;
     justify-items: end;
     font-size: 18px;
-    font-weight: 500;
     background: none;
     border: none;
     cursor: pointer; 
     width: 160px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: -10px;
 }
 
 .ddl-list {
@@ -404,7 +404,6 @@ body {
     text-decoration: none;
     display: block;
     font-size: 16px;
-    font-weight: 550;
 }
 
 .ddl-list a:hover {
@@ -421,4 +420,9 @@ body {
     width: 20px;
     height: 9px;
     margin-bottom: 2px;
+}
+
+.ref-link {
+    text-decoration: none;
+    text-decoration-color: white;
 }
