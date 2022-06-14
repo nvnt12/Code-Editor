@@ -378,7 +378,7 @@ body {
 
 .ddlbtn {
     color: white;    
-    padding: 20px 20px;
+    padding: 10px 10px;
     justify-items: end;
     font-size: 18px;
     background: none;
@@ -420,9 +420,4 @@ body {
     width: 20px;
     height: 9px;
     margin-bottom: 2px;
-}
-
-.ref-link {
-    text-decoration: none;
-    text-decoration-color: white;
 }
